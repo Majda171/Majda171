@@ -1,0 +1,53 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+
+}
+
+body{
+    text-align: center;
+    background: url(img/snake.png) no-repeat;
+    background-size: cover;
+    background-position: center;
+    background-color: rgb(162, 228, 206);
+    font-family: "Madimi One", sans-serif;
+    
+}
+
+h1{
+    color:greenyellow;
+    font-size: 80px;
+    
+    text-shadow: 3px 3px 3px rgba(0, 1, 0, 0.5);
+    margin: 10px;
+    margin-bottom: 15px;
+}
+.container{
+   margin: 0 auto;
+   align-items: center;
+   justify-content: center;
+   display: flex;
+ width: 600px;
+ height: 600px;
+ background-color: rgb(156, 140, 120);
+ border-radius: 16px;
+ 
+}
+#gameOver{
+    position: absolute;
+    text-align: center;
+    color:greenyellow;
+    font-size: 80px;
+    text-shadow: 3px 3px 3px rgba(0, 1, 0, 0.5);
+    z-index: 5;
+}
+
+
+#score{
+    font-size: 20px;
+    font-weight: bold;
+    display: inline-block; 
+    background-color: #fff;
+    padding: 15px 20px;
+}

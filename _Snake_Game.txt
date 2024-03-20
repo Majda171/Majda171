@@ -1,0 +1,48 @@
+# Snake Game
+
+This project is an implementation of the classic Snake game in JavaScript using HTML5 Canvas.
+
+## How to Play
+
+1. Open the `index.html` file in your web browser.
+2. The game will start automatically.
+3. Use arrow keys on your keyboard to control the snake.
+4. Try to collect food and earn points.
+5. The game ends if the snake collides with itself or with the boundaries of the game board.
+6. After the game ends, the final score will be displayed, and you can start a new game by clicking the "New Game" button or refreshing the page.
+
+## Features
+
+- Dynamically generated game board.
+- Ability to change the direction of the snake using arrow keys.
+- Automatic generation of food at random positions.
+- Display of the current score during gameplay.
+- Handling of the game's end state, including displaying "Game Over" and allowing to start a new game.
+
+## Tutorial Source
+
+This project is created based on this tutorial: [Snake Game Tutorial](https://www.youtube.com/watch?v=baBq5GAL0_U). However, modifications have been made, including the addition of scoring functionality and other enhancements.
+
+## Resources
+
+Image used in the project:
+
+![Snake Image](img/snake_image.jpg)
+
+## Technology Used
+
+- HTML5
+- CSS3
+- JavaScript
+
+## Author
+
+Created by: Magdaléna Škobrtalová
+
+## License
+
+This project is free to use without any restrictions. It does not have any specific license, so you are free to do whatever you want with the code, including modifications, distribution, and use for commercial purposes. For more information, please refer to the LICENSE file, which this project does not include.
+
+## Contact
+
+If you have any questions or feedback regarding this project, feel free to contact me at Mahdalova9@seznam.cz.
