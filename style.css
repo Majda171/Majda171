@@ -51,3 +51,12 @@ h1{
     background-color: #fff;
     padding: 15px 20px;
 }
+#restart{
+    margin-top: 20px;
+    padding: 10px 20px;
+    border: none;
+    background-color: greenyellow;
+    font-family: "Madimi One", sans-serif;
+    font-size: 20px;
+    box-shadow: 3px 3px 3px rgba(0, 1, 0, 0.5);
+}

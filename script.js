@@ -5,6 +5,7 @@ let cols = 20;
 let board;
 let context;
 let score = 0; // start score
+let restartBtn = document.querySelector("#restart");
 
 window.onload = function () {
     board = document.getElementById('board');
@@ -15,12 +16,12 @@ window.onload = function () {
     document.addEventListener("keyup", changeDirection);
     setInterval(update, 1500 / 10);
     document.getElementById('score').innerText = "Score: " + score;
+    restartBtn.addEventListener("click", restartGame);
 }
 
 function update() {
     if (gameOver) {
-        setTimeout(newGame, 3000);
-        return;
+        return; // Pokud je hra ukončena, nevykonávej žádné další akce
     }
     if (snakeX == foodX && snakeY == foodY) {
         increaseScore(); // increase score
@@ -36,9 +37,9 @@ function update() {
 
     context.fillStyle = "black";
     context.fillRect(0, 0, board.width, board.height);
-    context.fillStyle = "brown";
+    context.fillStyle = "brown"; // barva pro jídlo
     context.fillRect(foodX, foodY, blockSize, blockSize)
-    context.fillStyle = "greenyellow";
+    context.fillStyle = "greenyellow"; // barva pro hada
     snakeX += velocityX * blockSize;
     snakeY += velocityY * blockSize;
     context.fillRect(snakeX, snakeY, blockSize, blockSize);
@@ -104,8 +105,15 @@ function increaseScore() {
 }
 
 // Fce new game
-function newGame() {
-    location.reload();
+function restartGame() {
+    score = 0;
+    snakeX = blockSize * 5;
+    snakeY = blockSize * 5;
+    velocityX = 0;
+    velocityY = 0;
+    snakeBody = [];
+    gameOver = false;
+    document.getElementById('score').innerText = "Score: " + score;
+    document.getElementById('gameOver').innerText = "";
+    placeFood();
 }
-
-
